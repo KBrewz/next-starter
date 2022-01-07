@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "baseUrl": ".",
+    "paths": {
+      "@Components/*": ["components/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": ["components/**/*", "pages/**/*"],
+  "exclude": ["node_modules", "**/*.spec*"]
+}
